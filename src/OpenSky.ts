@@ -74,7 +74,6 @@ class OpenSky {
 	getOpenSkyData() {
 		return fetch(this.getFullUrl())
         .then(async resp => resp.json())
-        .then(json => json)
         .catch(err => {
             console.log('error :', err)
             throw err
