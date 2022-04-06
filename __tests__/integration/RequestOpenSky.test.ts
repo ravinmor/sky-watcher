@@ -9,14 +9,9 @@ describe('Request OpenSky API data', () => {
 
         const openSkyData = await openSky.getOpenSkyData()
 
-        console.log(openSkyData)
+        console.log(openSky)
 
-        const x = 2
-        const y = 2
-
-        const sum = x + y
-
-        expect(sum).toBe(5)
+        expect(openSkyData).toEqual(expect.anything())
     })
 
 })
