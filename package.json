@@ -1,0 +1,22 @@
+{
+  "name": "sky-watcher",
+  "version": "1.0.0",
+  "description": "Package built to gather information about sky",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravinmor/sky-watcher.git"
+  },
+  "keywords": [
+    "sky"
+  ],
+  "author": "Ravin Mor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravinmor/sky-watcher/issues"
+  },
+  "homepage": "https://github.com/ravinmor/sky-watcher#readme"
+}
