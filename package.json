@@ -2,9 +2,9 @@
   "name": "sky-watcher",
   "version": "1.0.0",
   "description": "Package built to gather information about sky",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --no-cache"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,15 @@
   "bugs": {
     "url": "https://github.com/ravinmor/sky-watcher/issues"
   },
-  "homepage": "https://github.com/ravinmor/sky-watcher#readme"
+  "homepage": "https://github.com/ravinmor/sky-watcher#readme",
+  "dependencies": {
+    "@jest/types": "^27.5.1",
+    "@tsconfig/node14": "^1.0.1",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1"
+  }
 }
