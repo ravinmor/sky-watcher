@@ -1,22 +1,14 @@
 import OpenSky from '../../src/OpenSky'
 
 describe('Request OpenSky API data', () => {
-    it('request Open Sky Api', async () => {
+    it('request Open Sky Api using coordinates as parameters', async () => {
         const openSky = new OpenSky()
 
-        openSky.setMaxCoordinates({latitude: -16.545761, longitude: -41.638994})
-        openSky.setMinCoordinates({latitude: -31.545761, longitude: -51.638994})
+        openSky.setMaxCoordinates({latitude: 47.8229, longitude: 10.5226})
+        openSky.setMinCoordinates({latitude: 45.8389, longitude: 5.9962})
 
         const openSkyData = await openSky.getOpenSkyData()
 
-        console.log(openSkyData)
-
-        const x = 2
-        const y = 2
-
-        const sum = x + y
-
-        expect(sum).toBe(5)
+        expect(openSkyData).toEqual(expect.anything())
     })
-
 })
